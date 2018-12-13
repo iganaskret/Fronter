@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Iga's basic HTML page">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title> Create group page </title>
+</head>
+
+<body>
+    <div class="navbar"> <img src="../kea3.png" id="logo">
+        ROOMS <img src="../triangle.png" id="triangle"> <img src="../search.png" id="search">
+    </div>
+    <div id="rooms" class="disabled"> TODAY <br> STUDENT INFO <br> WORKSPACE </div>
+    <a href="page1.html"> <img src="../back.png" id="back"> </a>
+    <center>
+        <h2 id="h2page3"> CREATE A NEW GROUP </h2>
+
+        <h3> ADD NAME OF THE GROUP </h3>
+        <input type="text" placeholder="Name of the group" name="name"> <br>
+        <h3> ADD MEMBERS </h3>
+        <input type="text" placeholder="Search for people" name="name"> <br>
+        <h3> CHOOSE THE ASSIGNMENT </h3>
+        <select id="assignment" name="assignment">
+                    <option value="01.01.02 Animation">01.01.02 Animation</option>
+                    <option value="01.02.01 Web">01.02.01 Web</option>
+                    <option value="01.03.01 UX">01.03.01 UX </option>
+                </select> <br>
+        <br>
+        <button class="create"> <a href="page4.html"> CREATE </a></button>
+    </center>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let rooms = document.querySelector('#rooms');
+        let triangle = document.querySelector('#triangle');
+        let counter = 0;
+        triangle.addEventListener("click", able);
+
+        function able() {
+            if (counter == 0) {
+                rooms.classList.remove("disabled");
+                rooms.style.animation = ("final 1s ease forwards");
+                counter++
+            } else {
+                rooms.classList.add("disabled");
+                counter--
+            }
+        }
+
+    </script>
+</body>
+
+</html>
