@@ -418,7 +418,13 @@ input[type=text]:focus {
     display: inline-block;
     margin-left: 75%;
 }
-
+    
+  #searchindex {
+    width: 5%;
+    height: 5%;
+    display: inline-block;
+    margin-left: 75%;
+}
 #triangle {
     width: 2%;
     margin-top: 0.5%;
@@ -586,5 +592,12 @@ h3 {
     font-size: 30pt;
     color: #233249;
     margin-top: 3%
+}
+    #todonav {
+        margin-top: 0;
+        height: 200px;
+}
+#todop {
+    font-size: 20pt;
 }
 }
