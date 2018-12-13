@@ -1,0 +1,69 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: beige;
+    border-radius: 100%;
+    text-align: center;
+}
+#easeinout {
+    animation: easeinout 3s cubic-bezier(.16,.82,.9,.27);
+}
+
+@keyframes easeinout {
+    50% {
+        transform: translateX(100%);
+    }
+}
+
+#easein {
+    animation: easein 3s ease-in;
+}
+
+@keyframes easein {
+    50% {
+        transform: translateX(100%);
+    }
+}
+
+#easeout {
+    animation: easeout 3s ease-out;
+}
+
+@keyframes easeout {
+    50%{
+        transform: translateX(100%);
+    }
+}
+
+#anticipation {
+    animation: anticipation 4s ease;
+}
+
+@keyframes anticipation {
+    0% {
+        transform: translateX(0%);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+}
+
+#squash {
+    animation: squash 4s ease-out;}
+
+@keyframes squash {
+    50% {
+        width: 220px;
+        height: 180px;
+        transform: translateX(30%);
+    }
+    /*50% {
+        width: 200px;
+        height: 200px;
+        transform: translateX(100%);*/
+    }
+    
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Iga's basic HTML page">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title> Chatbox page </title>
+</head>
+
+<body>
+    <div class="navbar"> <img src="../kea3.png" id="logo">
+        ROOMS <img src="../triangle.png" id="triangle"> <img src="../search.png" id="search">
+    </div>
+    <div id="rooms" class="disabled"> TODAY <br> STUDENT INFO <br> WORKSPACE </div>
+    <a href="page1.html"> <img src="../back.png" id="back"> </a>
+    <center>
+        <h2> GROUP CHAT </h2>
+    </center>
+    <h3>
+         <div class="todo"> <label for="todo">  <h3> TO DO LIST </h3> </label>
+         <input type="checkbox" id="todo"> 
+         <nav id="todonav"> <p id="todop"> here write your to-do list! </p>
+             
+         </nav></div>
+        <div class="menu">
+            <label for="menu"> &#9776; </label>
+            <input type="checkbox" id="menu"> 
+            <nav> <h3> OPTIONS </h3>
+            <img src="../ask.png" id="ask">
+            <img src="../computer-screen_318-32677.jpg" id="screen">
+            <img src="../calendar.png" id="calendar">
+            <img src="../files.png" id="files"> </nav>
+            </div>
+          
+            <br>
+        <center> PROJECT 7 </center>
+    </h3>
+
+
+    <div class="header">
+        <h4> see task description here > <br>
+            settings >
+        </h4>
+    </div>
+
+    <div class="chatbox">
+        <br>
+        <div id="hello" class="hidden">
+            Hello!
+        </div>
+        <form id="form4" class="long">
+            <fieldset>
+                <img src="../attach.png" id="attach">
+                <input type="text" id="message" placeholder="Write 'Hello!'"> <img src="../send.svg" id="send" alt="submit">
+            </fieldset>
+        </form>
+    </div>
+
+
+    <script>
+        let rooms = document.querySelector('#rooms');
+        let triangle = document.querySelector('#triangle');
+        let counter = 0;
+        triangle.addEventListener("click", able);
+
+        function able() {
+            if (counter == 0) {
+                rooms.classList.remove("disabled");
+                rooms.style.animation = ("final 1s ease forwards");
+                counter++
+            } else {
+                rooms.classList.add("disabled");
+                counter--
+            }
+        }
+
+        let hello = document.querySelector('#hello');
+        let form = document.querySelector('#form4');
+        let send = document.querySelector('#send');
+
+        send.addEventListener("click", message);
+
+        function message() {
+            hello.classList.remove("hidden");
+            form.classList.remove("long");
+            form.classList.add("short");
+        }
+
+    </script>
+</body>
+
+</html>

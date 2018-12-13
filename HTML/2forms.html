@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Iga's basic HTML page">
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 15px;
+        }
+       input[type=text], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+    input[type=password], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+        input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+            font-size: 20px;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}input[type=submit]:hover {
+  background-color: #45a055;
+}
+        fieldset {
+            border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+            width: 50%;
+        }
+        h1 { margin-left: 22%;}
+        input[type=text]:focus {
+        background-color: lightgray;
+}
+        footer {
+            margin-left: 20%;
+            margin-top: 30px;
+        }
+    </style>
+    <title> The correct HTML structure. Page 01 </title>
+</head>
+
+<body>
+    <h1> Sign up </h1>
+    <div>
+        <fieldset id="data-area">
+            <form>
+                Your name<span style="color: red">*</span> <br> <input type="text" placeholder="Your name" name="name" required> <br> <br>
+                Your e-mail adress<span style="color: red">*</span> <br> <input type="text" placeholder="Your e-mail adress" name="email" required> <br> <br>
+                Your age<span style="color: red">*</span> <br> <input type="text" placeholder="Your age" name="age"> <br> <br>
+                Password<span style="color: red">*</span> <br> <input type="password" placeholder="Password" name="password" required> <br> <br>
+
+                <label for="gender">Your gender:</label> <br>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="not">Prefer not to answer </option>
+                </select> <br> <br>
+                Which area interests you the most? <br>
+                <input type="checkbox" name="interest1" value="Design"> Design <br>
+                <input type="checkbox" name="interest2" value="Coding">Coding <br>
+                <input type="checkbox" name="interest3" value="UX"> UX <br> <br>
+                Do you live in Denmark? <br>
+                <input type="radio" name="yes" value="yes"> Yes<br>
+                <input type="radio" name="no" value="no"> No<br>
+                <input type="submit">
+            </form>
+        </fieldset>
+        <br>
+        <h1> Log in </h1>
+    </div>
+    <div id="2">
+        <fieldset id="login-area">
+            <form>
+                Your e-mail adress<span style="color: red">*</span> <input type="text" placeholder="Your e-mail adress" name="email" required> <br>
+                Password<span style="color: red">*</span> <input type="password" placeholder="Password" name="password" required> <br>
+                <input type="checkbox" name="remember" checked> Remember me <br> <br> <input type="submit">
+            </form>
+        </fieldset>
+    </div>
+    <br>
+    <footer> made by Iga Naskręt 2018 </footer>
+
+</body>
+
+</html>

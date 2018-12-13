@@ -1,0 +1,603 @@
+/* FONTS */
+@font-face {
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica Neue Condensed Bold'), url('HelveticaNeue-CondensedBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Roman';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HelveticaNeueLTCom-Roman'), url('HelveticaNeueLTCom-Roman.ttf') format('ttf');
+}
+
+body {
+    font-family: 'Helvetica Neue Roman';
+    font-size: 9pt;
+    line-height: 15px;
+    background-color: #ededed;
+    text-align: justify;
+}
+
+/* WORKSPACE */
+
+h2 {
+    text-align: center;
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 30pt;
+    color: #233249;
+    margin-top: 10%
+}
+
+.icon {
+    width: 80px;
+    padding: 10px;
+    border: 0;
+}
+
+#new {
+    float: right;
+}
+
+.workspace {
+    background-color: #ea5045;
+    margin: 10px;
+    margin-top: 0;
+    border: none;
+    outline: none;
+}
+
+p {
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 13pt;
+    color: #233249;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+/* CHATBOX */
+
+.chatbox {
+    background-color: #e0e0e0;
+    height: 416px;
+}
+
+#send {
+    width: 6%;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 10px;
+    padding-top: 40px;
+}
+
+#form4 {
+    width: 140%;
+}
+
+fieldset {
+    border: none;
+    outline: none;
+}
+
+.long {
+    padding-top: 290px;
+}
+
+.short {
+    padding-top: 240px;
+}
+
+] #message {
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 10pt;
+    width: 80%;
+    position: relative;
+}
+
+#attach {
+    width: 8%;
+    padding-top: 20px;
+
+}
+
+.header {
+    background-color: #233249;
+    color: white;
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 10pt;
+    line-height: 23px;
+    height: 50px;
+}
+
+h4 {
+    text-decoration: underline;
+    line-height: 25px;
+}
+
+h3 {
+    color: #ea5045;
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 19pt;
+}
+
+#hello {
+    padding: 17px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #233249;
+    color: white;
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 14pt;
+    border-radius: 10pt;
+}
+
+.hidden {
+    display: none;
+}
+
+nav {
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+#menu:checked ~ nav {
+    display: block;
+}
+.todo {
+float: right;
+}
+#todo {
+    display: none;
+}
+
+#todo:checked ~ nav {
+    display: block;
+}
+
+#todonav {
+    width: 100px;
+}
+#todop {
+    font-size: 8pt;
+}
+
+nav {
+    width: 300px;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+#ask {
+    width: 40px;
+    margin-right: 35px;
+}
+
+#screen {
+    width: 40px;
+    margin-right: 40px;
+}
+
+#calendar {
+    width: 40px;
+    margin-right: 40px;
+}
+
+#files {
+    width: 40px;
+}
+
+#todo {
+    float: right;
+    position: relative;
+}
+
+/* PAGE 3 */
+
+.create {
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 22pt;
+    padding: 14px;
+    color: #233249;
+    background-color: #ea5045;
+}
+
+#h2page3 {
+    margin-left: 8%;
+    text-align: center;
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 30pt;
+    color: #233249;
+    margin-top: 10%;
+    line-height: 33px;
+}
+
+/* PAGE 2 */
+
+#back {
+    width: 10%;
+    position: absolute;
+    margin-top: 6%;
+}
+
+.left {
+    background-color: #ea5045;
+    margin: 10px;
+    margin-left: 20px;
+    margin-top: 0;
+    border: none;
+    outline: none;
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 10pt;
+    color: black;
+}
+
+.right {
+    background-color: #ea5045;
+    margin: 10px;
+    margin-right: 20px;
+    margin-top: 0;
+    border: none;
+    outline: none;
+    float: right;
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 10pt;
+    color: black;
+}
+
+.icon2 {
+    width: 80px;
+    padding: 10px;
+    border: 0;
+}
+
+/* NAVBAR GENERAL */
+
+#search {
+    width: 16.6%;
+    height: 16.6%;
+    display: inline-block;
+    float: right;
+}
+
+#triangle {
+    width: 4%;
+    margin-top: 1%;
+    margin-right: 2%;
+}
+
+#rooms {
+    overflow: hidden;
+    background-color: #233249;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-bottom: 8px;
+    margin-bottom: 0;
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 20px;
+    color: white;
+    align-items: center;
+    width: 40%;
+    margin-left: 35%;
+    line-height: 40px;
+    height: 0;
+}
+
+@keyframes final {
+    to {
+        height: 135px;
+    }
+}
+
+.disabled {
+    display: none;
+}
+
+/* LOGIN PAGE */
+
+a {
+    text-decoration: none;
+    color: #233249;
+}
+
+.navbar {
+    display: inline-block;
+    background-color: #233249;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-bottom: 8px;
+    margin-bottom: 0;
+    width: 100%;
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 40%;
+    height: 40%;
+    margin-right: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 20pt;
+    display: inline;
+    color: #233249;
+    margin-bottom: 10%;
+    text-transform: uppercase;
+}
+
+#login-area {
+    display: block;
+    margin-top: 30px;
+    background-color: #e0e0e0;
+    padding: 20px;
+    width: 70%;
+}
+
+input[type=text],
+select {
+    width: 50%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type=password],
+select {
+    width: 50%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#move {
+    width: 100%;
+    background-color: #ea5045;
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 15pt;
+    text-transform: uppercase;
+    color: #233249;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=text]:focus {
+    background-color: lightgray;
+}
+
+#searchindex {
+    width: 16.6%;
+    height: 16.6%;
+    display: inline-block;
+    float: right;
+}
+
+@media all and (min-width:1100px) 
+{
+    .navbar {
+    display: inline-block;
+    background-color: #233249;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-bottom: 8px;
+    margin-bottom: 0;
+    width: 100%;
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 10%;
+    height: 10%;
+    margin-right: 10px;
+}
+    
+  #search {
+    width: 5%;
+    height: 5%;
+    display: inline-block;
+    margin-left: 75%;
+}
+    
+  #searchindex {
+    width: 5%;
+    height: 5%;
+    display: inline-block;
+    margin-left: 75%;
+}
+#triangle {
+    width: 2%;
+    margin-top: 0.5%;
+    margin-right: 2%;
+}
+
+#rooms {
+    overflow: hidden;
+    background-color: #233249;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-bottom: 8px;
+    margin-bottom: 0;
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 20px;
+    color: white;
+    align-items: center;
+    width: 20%;
+    margin-left: 10%;
+    line-height: 40px;
+    height: 0;
+}
+
+@keyframes final {
+    to {
+        height: 135px;
+    }
+}
+
+.disabled {
+    display: none;
+}
+   
+#back {
+    width: 4%;
+    position: absolute;
+    margin-top: 2%;
+}
+
+.left {
+    background-color: #ea5045;
+    margin: 10px;
+    margin-left: 10px;
+    margin-top: 0;
+    border: none;
+    outline: none;
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 10pt;
+    color: black;
+}
+
+.right {
+    background-color: #ea5045;
+    margin: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+    border: none;
+    outline: none;
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 10pt;
+    color: black;
+    float: left;}
+    
+#h2page3 {
+    text-align: center;
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 30pt;
+    color: #233249;
+    margin-top: 10%;
+    line-height: 33px;
+    margin-left: auto;
+}
+    
+    /* CHATBOX */
+    
+   .chatbox {
+    background-color: #e0e0e0;
+    height: 416px;
+}
+
+#send {
+    width: 2.5%;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 10px;
+    padding-top: 40px;
+}
+
+#form4 {
+    width: 140%;
+}
+
+fieldset {
+    border: none;
+    outline: none;
+}
+
+.long {
+    padding-top: 290px;
+}
+
+.short {
+    padding-top: 240px;
+}
+
+] #message {
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 10pt;
+    width: 80%;
+    position: relative;
+}
+
+#attach {
+    width: 2%;
+    padding-top: 30px;
+
+}
+
+.header {
+    background-color: #233249;
+    color: white;
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 10pt;
+    line-height: 23px;
+    height: 50px;
+}
+
+h4 {
+    text-decoration: underline;
+    line-height: 25px;
+}
+
+h3 {
+    color: #ea5045;
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 19pt;
+}
+
+#hello {
+    padding: 17px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #233249;
+    color: white;
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 14pt;
+    border-radius: 10pt;
+}
+
+.hidden {
+    display: none;
+} 
+    .workspace {
+        float: left;
+        margin: 0px;
+        margin-left: 27%;
+    }
+    #new {
+   
+        margin-right: 27%;
+}
+    h2 {
+    text-align: center;
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 30pt;
+    color: #233249;
+    margin-top: 3%
+}
+    #todonav {
+        margin-top: 0;
+        height: 200px;
+}
+#todop {
+    font-size: 20pt;
+}
+}

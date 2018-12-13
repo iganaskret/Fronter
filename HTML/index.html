@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Iga's basic HTML page">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title> Login page </title>
+</head>
+
+<body>
+    <div class="navbar"> <img src="../kea3.png" id="logo"> <img src="../search.png" id="searchindex"> </div>
+    <div> <br> <br>
+        <center>
+            <h1>Log in </h1>
+        </center>
+        <center>
+            <div id="login-area">
+                <form>
+                    Your KEA mail adress <br> <input type="text" placeholder="Your KEA-mail" name="email"> <br> <br>
+                    Password <br> <input type="password" placeholder="Password" name="password"> <br> <br>
+                    <input type="checkbox" name="remember" checked> Remember me <br> <br> 
+                    <button id="move"> <a href="page1.html"> SUBMIT </a> </button>
+                </form>
+            </div>
+        </center>
+    </div>
+    <script>
+        let submit = document.querySelector("#move");
+        submit.addEventListener("click", function() {
+        window.location.href = "page1.html";
+
+    </script> 
+</body>
+
+</html>
